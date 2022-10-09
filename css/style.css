@@ -108,8 +108,8 @@ nav a.current {
     width: 100%;
     border: 2px solid;
     box-shadow: 6px 4px 8px;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .overlay {
