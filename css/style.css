@@ -1,0 +1,38 @@
+/* Globle Settings */
+body {
+    background-color: #bac1be;
+}
+
+
+/* Navigation bar */
+nav {
+    background-color: #5a5c67;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.current {
+    background-color: #9e6e83;
+    color: white;
+}
+
