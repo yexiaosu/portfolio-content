@@ -1,8 +1,13 @@
+html {
+    height: 100%;
+}
 /* Globle Settings */
 body {
     background-color: #bac1be;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 45px auto 45px;
 }
-
 
 /* Navigation bar */
 nav {
@@ -44,7 +49,12 @@ nav a.current {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     grid-gap: 10px;
+    margin-top: 44px;
     justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-rows: 500px;
 }
 
 @media screen and (min-width:778px) {
@@ -147,15 +157,16 @@ nav a.current {
 
 /* Main content */
 main {
-    position: relative;
-    top: 100px;
+    grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 /* Footer */
 footer {
-    width: 100px;
-    height: 50px;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid black;
+    grid-row-start: 3;
+  grid-row-end: 4;
+    height: 45px;
+    width: 100%;
+    color: #fff;
+    background-color: black;
 }
