@@ -36,3 +36,52 @@ nav a.current {
     color: white;
 }
 
+/* Gallery */
+.gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,auto);
+    grid-gap: 10px;
+}
+
+@media screen and (min-width:778px){
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-five,.img-six{
+        grid-column: 1/span 2;
+    }
+
+}
+
+@media screen and (min-width:900px){
+
+    /* REQUIREMENTS:
+    Change the grid to
+        - four equal columns.
+        - first five rows are 375px, last one is 250px;
+    */
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img-five,.img-six{
+        grid-column: span 2;
+    }
+}
+
+
+/* Skip to the main function */
+.skip a {
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 0;
+}
+
