@@ -42,34 +42,34 @@ nav a.current {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8,auto);
+    grid-template-rows: repeat(8, auto);
     grid-gap: 10px;
     justify-items: center;
 }
 
-@media screen and (min-width:778px){
-    .gallery{
+@media screen and (min-width:778px) {
+    .gallery {
         grid-template-columns: 1fr 1fr;
     }
 
-    .wide{
+    .wide {
         grid-column: 1/span 2;
     }
 
 }
 
-@media screen and (min-width:900px){
+@media screen and (min-width:900px) {
 
     /* REQUIREMENTS:
     Change the grid to
         - four equal columns.
         - first five rows are 375px, last one is 250px;
     */
-    .gallery{
+    .gallery {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .wide{
+    .wide {
         grid-column: span 2;
     }
 }
@@ -96,7 +96,9 @@ nav a.current {
 .gallery figure img {
     display: block;
     border: 2px solid;
-  box-shadow: 6px 4px 8px;
+    box-shadow: 6px 4px 8px;
+    margin: auto;
+    padding: auto;
 }
 
 .overlay {
@@ -107,17 +109,18 @@ nav a.current {
     height: 60px;
     justify-self: center;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
     color: #f1f1f1;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     color: white;
     font-size: 20px;
 }
 
 .gallery figure:hover .overlay {
     opacity: 1;
-  }
+}
 
 .center {
     display: flex;
@@ -156,4 +159,3 @@ footer {
     margin: 5px;
     border: 1px solid black;
 }
-
