@@ -155,6 +155,24 @@ h1 {
     font-size: 34px;
 }
 
+/* Headline */
+#greet {
+    background-image: url("../images/background.jpg");
+    background-color: #bac1be;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#greet h1 {
+    text-align: center;
+    padding: 140px 0;
+    position: sticky;
+    top: 40px;
+}
+
 /* Footer */
 footer {
     grid-row-start: 3;
