@@ -4,6 +4,10 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icon.ico" >
     <link rel="stylesheet" href="css/html5reset.css" >
     <link rel="stylesheet" href="css/style.css" >
@@ -24,84 +28,103 @@
 
     <main>
       <h1>Portfolio</h1>
-      <div>
-        <h3>Break the Bricks (Web Game)</h3>
-        <div>06/2020</div>
-        <div>Team Project</div>
-        <ul>
-          <li>
-            Make a Break the Bricks web game with Elm with the other three
-            teammates.
-          </li>
-          <li>
-            Design and add unique game mechanics and story to it, such as:
+      <div class="content">
+        <div class="card">
+          <img src="images/avatar.jpg" class="avatar" alt="my avatar" />
+          <h1>Lan Wang</h1>
+          <div>Graduate Student</div>
+          <div>Ex Intern at Bilibili Inc.</div>
+          <div>M.S. in Information Science at Umich</div>
+          <div>B.S.E. in ECE at SJTU</div>
+          <div class="contact">
+            <a href="#"><i class="fa fa-weixin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+          <button>Resume</button>
+        </div>
+        <div>
+          <div>
+            <h3>Break the Bricks (Web Game)</h3>
+            <div>06/2020</div>
+            <div>Team Project</div>
             <ul>
-              <li>Store System</li>
-              <li>Skill System</li>
-              <li>Boss Room, in which we add elements of STG</li>
+              <li>
+                Make a Break the Bricks web game with Elm with the other three
+                teammates.
+              </li>
+              <li>
+                Design and add unique game mechanics and story to it, such as:
+                <ul>
+                  <li>Store System</li>
+                  <li>Skill System</li>
+                  <li>Boss Room, in which we add elements of STG</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Rebirth (Web Game)</h3>
-        <div>06/2020</div>
-        <div>Team Project</div>
-        <ul>
-          <li>
-            Make a 2D interactive suspense RPG with Elm with the other three
-            teammates.
-          </li>
-          <li>Draw all the characters and scenes.</li>
-          <li>Provide the initial outline of the story.</li>
-          <li>Be responsible for the visual effects of the game (use CSS).</li>
-        </ul>
-        <figure>
-          <img src="images/rebirth.png" width="500" alt="rebirth" >
-          <figcaption>Coverage of user mannual</figcaption>
-        </figure>
-        <video controls width="500">
-          <source src="videos/rebirth_trailer.mp4" type="video/mp4" >
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </div>
-      <div>
-        <h3>
-          Generating Conventional Identifiers by Pretrained Language Model
-        </h3>
-        <div>03/2021-09/2021</div>
-        <div>Participation in Research Program (PRP) of SJTU</div>
-        <ul>
-          <li>Learn basic knowledge about language models.</li>
-          <li>
-            Apply Bert to complete the basic requirements of this program.
-          </li>
-          <li>Reflect on the potential problems and possible improvements.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Mumsh (a self-made shell)</h3>
-        <div>09/2021</div>
-        <div>Individual Project</div>
-        <ul>
-          <li>Learn basic knowledge about shell.</li>
-          <li>
-            Write a self-made shell in C that supports comprehensive syntax and
-            some built-in commands.
-          </li>
-          <li>Mumsh performs similar to Bash.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>LemonDB (A simple database with multithreading)</h3>
-        <div>10/2021-11/2021</div>
-        <div>Team Project</div>
-        <ul>
-          <li>Learn basic knowledge about multithreading.</li>
-          <li>Cooperate with other three teammates.</li>
-          <li>Implement queries in C++.</li>
-          <li>Utilize multithreading to speed up calculation.</li>
-        </ul>
+          </div>
+          <div>
+            <h3>Rebirth (Web Game)</h3>
+            <div>06/2020</div>
+            <div>Team Project</div>
+            <ul>
+              <li>
+                Make a 2D interactive suspense RPG with Elm with the other three
+                teammates.
+              </li>
+              <li>Draw all the characters and scenes.</li>
+              <li>Provide the initial outline of the story.</li>
+              <li>Be responsible for the visual effects of the game (use CSS).</li>
+            </ul>
+            <figure>
+              <img src="images/rebirth.png" width="500" alt="rebirth" >
+              <figcaption>Coverage of user mannual</figcaption>
+            </figure>
+            <video controls width="500">
+              <source src="videos/rebirth_trailer.mp4" type="video/mp4" >
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+          <div>
+            <h3>
+              Generating Conventional Identifiers by Pretrained Language Model
+            </h3>
+            <div>03/2021-09/2021</div>
+            <div>Participation in Research Program (PRP) of SJTU</div>
+            <ul>
+              <li>Learn basic knowledge about language models.</li>
+              <li>
+                Apply Bert to complete the basic requirements of this program.
+              </li>
+              <li>Reflect on the potential problems and possible improvements.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Mumsh (a self-made shell)</h3>
+            <div>09/2021</div>
+            <div>Individual Project</div>
+            <ul>
+              <li>Learn basic knowledge about shell.</li>
+              <li>
+                Write a self-made shell in C that supports comprehensive syntax and
+                some built-in commands.
+              </li>
+              <li>Mumsh performs similar to Bash.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>LemonDB (A simple database with multithreading)</h3>
+            <div>10/2021-11/2021</div>
+            <div>Team Project</div>
+            <ul>
+              <li>Learn basic knowledge about multithreading.</li>
+              <li>Cooperate with other three teammates.</li>
+              <li>Implement queries in C++.</li>
+              <li>Utilize multithreading to speed up calculation.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
 
