@@ -8,7 +8,7 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 45px auto 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 18px;
     color: #393539;
 }
@@ -45,6 +45,105 @@ nav a.current {
     background-color: #9e6e83;
     color: #f2f2f2;
 }
+
+/* Main content */
+main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    line-height: 1.5;
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+/* Index Headline */
+#greet {
+    background-image: url("../images/background.jpg");
+    background-color: #bac1be;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#greet h1 {
+    text-align: center;
+    padding: 35px 0;
+    position: sticky;
+    top: 140px;
+}
+
+/* content */
+.content {
+    display: flex;
+    padding: 80px 0px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.content p {
+    display: inline-block;
+    max-width: 500px;
+}
+
+.card {
+    margin-right: 50px;
+    max-width: 300px;
+    height: 100%;
+    text-align: center;
+    color: #393539;
+    font-size: 18px;
+}
+
+.avatar {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.contact {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card a {
+    color: #5a5c67;
+    display: block;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5a5c67;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+
+.card a:hover {
+    color: #9e6e83;
+}
+
+.card button:hover {
+    background-color: #9e6e83;
+}
+
 
 /* Gallery */
 .gallery {
@@ -139,104 +238,6 @@ nav a.current {
 
 .wide {
     max-width: 700px;
-}
-
-/* Main content */
-main {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: center;
-    line-height: 1.5;
-    width: 100%;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 34px;
-}
-
-/* Headline */
-#greet {
-    background-image: url("../images/background.jpg");
-    background-color: #bac1be;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#greet h1 {
-    text-align: center;
-    padding: 35px 0;
-    position: sticky;
-    top: 140px;
-}
-
-/* content */
-.content {
-    display: flex;
-    padding: 80px 0px;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.content p {
-    display: inline-block;
-    max-width: 500px;
-}
-
-.card {
-    margin-right: 50px;
-    max-width: 300px;
-    height: 100%;
-    text-align: center;
-    color: #393539;
-    font-size: 18px;
-}
-
-.avatar {
-    width: 70%;
-    border-radius: 50%;
-}
-
-.contact {
-    border: none;
-    padding: 8px;
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.card a {
-    color: #5a5c67;
-    display: block;
-}
-
-button {
-    border: none;
-    border-radius: 10px;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #5a5c67;
-    text-align: center;
-    cursor: pointer;
-    width: 50%;
-    font-size: 18px;
-  }
-
-.card a:hover {
-    color: #9e6e83;
-}
-
-.card button:hover {
-    background-color: #9e6e83;
 }
 
 /* Footer */
