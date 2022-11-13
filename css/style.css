@@ -44,8 +44,8 @@ nav a:hover {
 }
 
 nav a.current {
-    background-color: #8F6477;
-    color: #f2f2f2;
+    background-color: #C288A1;
+    color: #050505;
 }
 
 /* Index Headline */
@@ -208,7 +208,7 @@ h1 {
     justify-self: center;
     margin-bottom: 80px;
     max-width: 300px;
-    height: 100%;
+    height: auto;
     text-align: center;
     color: #393539;
     font-size: 18px;
