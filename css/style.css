@@ -375,10 +375,6 @@ footer {
     }
 
     /* Main content */
-    p {
-        max-width: 700px;
-    }
-
     .thin {
         max-width: 300px;
     }
