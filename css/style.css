@@ -213,6 +213,16 @@ aside {
     font-size: 18px;
 }
 
+.name {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+
 .avatar {
     width: 70%;
     border-radius: 50%;
