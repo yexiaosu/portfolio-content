@@ -87,12 +87,35 @@ h1 {
     font-size: 34px;
 }
 
+.section {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.type {
+    color:#5a5c67
+}
+
 .content {
     padding: 50px 0px;
     width: 90%;
     margin: 0 auto;
-    max-width: 500px;
-    justify-content: space-around;
+}
+
+.content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.content ul ul {
+	list-style-type: circle;
+    margin-left: 25px;
 }
 
 /* Aside */
