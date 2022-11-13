@@ -61,11 +61,76 @@ nav a.current {
     background-size: cover;
 }
 
-#greet h1 {
-    text-align: center;
+.text {
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+#greet div {
     padding: 35px 0;
     position: sticky;
     top: 140px;
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 34px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#greet div:first-of-type {
+    animation: 7s 1 alternate showup;
+}
+
+#greet div:last-of-type {
+    width: auto;
+    animation: 7s 1 alternate reveal;
+}
+
+#greet div:last-of-type span {
+    margin-left: 0px;
+    animation: 7s 1 alternate slidein;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: auto;
+    }
+
+    80% {
+        opacity: 1;
+    }
 }
 
 /* Main content */
@@ -99,7 +164,7 @@ h1 {
 }
 
 .type {
-    color:#5a5c67
+    color: #5a5c67
 }
 
 .content {
@@ -114,7 +179,7 @@ h1 {
 }
 
 .content ul ul {
-	list-style-type: circle;
+    list-style-type: circle;
     margin-left: 25px;
 }
 
