@@ -80,17 +80,17 @@ nav a.current {
 }
 
 #greet div:first-of-type {
-    animation: 7s 1 alternate showup;
+    animation: 5s 1 alternate showup;
 }
 
 #greet div:last-of-type {
     width: auto;
-    animation: 7s 1 alternate reveal;
+    animation: 5s 1 alternate reveal;
 }
 
 #greet div:last-of-type span {
     margin-left: 0px;
-    animation: 7s 1 alternate slidein;
+    animation: 5s 1 alternate slidein;
 }
 
 @keyframes showup {
@@ -256,18 +256,15 @@ button {
 
 /* Gallery */
 .gallery {
-    width: 90%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, auto);
-    grid-gap: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
     margin-top: 44px;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     align-content: center;
-    grid-auto-rows: 500px;
 }
 
 /* Figure */
@@ -315,11 +312,11 @@ button {
 }
 
 .thin {
-    max-width: 300px;
+    max-width: 80%;
 }
 
 .wide {
-    max-width: 700px;
+    max-width: 80%;
 }
 
 /* Footer */
@@ -345,11 +342,15 @@ footer {
     }
 
     .gallery {
-        grid-template-columns: 1fr 1fr;
+        flex-flow: row wrap;
     }
 
+    .thin {
+        max-width: 80%;
+    }
+    
     .wide {
-        grid-column: 1/span 2;
+        max-width: 80%;
     }
 
     /* Aside */
@@ -378,12 +379,12 @@ footer {
         max-width: 700px;
     }
 
-    .gallery {
-        grid-template-columns: repeat(4, 1fr);
+    .thin {
+        max-width: 300px;
     }
-
+    
     .wide {
-        grid-column: span 2;
+        max-width: 600px;
     }
 
     /* Aside */
