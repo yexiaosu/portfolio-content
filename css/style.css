@@ -241,7 +241,7 @@ aside {
     justify-content: space-around;
 }
 
-.card a {
+.card i {
     color: #5a5c67;
     display: block;
 }
@@ -260,7 +260,7 @@ button {
     font-size: 18px;
 }
 
-.card a:hover {
+.card i:hover {
     color: #9e6e83;
 }
 
