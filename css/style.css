@@ -59,7 +59,7 @@ nav a.current {
 
 .text {
     left: 50%;
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
 }
 
 #greet div {
