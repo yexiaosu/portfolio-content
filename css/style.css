@@ -32,7 +32,7 @@ nav ul {
 
 nav a {
     float: left;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 nav a.current {
-    background-color: #9e6e83;
+    background-color: #8F6477;
     color: #f2f2f2;
 }
 
@@ -202,14 +202,11 @@ h1 {
 }
 
 /* Aside */
-aside {
+.card {
     grid-row-start: 4;
     grid-row-end: 5;
     justify-self: center;
     padding-bottom: 80px;
-}
-
-.card {
     max-width: 300px;
     height: 100%;
     text-align: center;
