@@ -133,6 +133,20 @@ nav a.current {
     }
 }
 
+@media (prefers-reduced-motion) {
+    #greet div:first-of-type {
+        animation: none;
+    }
+    
+    #greet div:last-of-type {
+        animation: none;
+    }
+    
+    #greet div:last-of-type span {
+        animation: none;
+    }
+}
+
 /* Main content */
 main {
     grid-row: 3;
