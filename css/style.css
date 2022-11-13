@@ -178,7 +178,7 @@ h1 {
 }
 
 .type {
-    color: #5a5c67
+    color: #4B4D57
 }
 
 .content {
@@ -206,7 +206,7 @@ h1 {
     grid-row-start: 4;
     grid-row-end: 5;
     justify-self: center;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     max-width: 300px;
     height: 100%;
     text-align: center;
@@ -365,7 +365,7 @@ footer {
     }
 
     /* Aside */
-    aside {
+    .card {
         grid-row: 3;
         grid-column: 1;
         justify-self: center;
@@ -395,9 +395,7 @@ footer {
     }
 
     /* Aside */
-    aside {
+    .card {
         margin: 0px 60px;
     }
-
-
 }
