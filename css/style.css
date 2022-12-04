@@ -438,7 +438,7 @@ input[type=submit]:hover {
     background-color: #9e6e83;
 }
 
-@media screen and (min-width:778px) {
+@media screen and (min-width:768px) {
     body {
         grid-template-rows: 45px auto auto 45px;
         grid-template-columns: 350px auto;
@@ -481,7 +481,7 @@ input[type=submit]:hover {
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1024px) {
     body {
         grid-template-rows: 45px auto auto 45px;
         grid-template-columns: 450px auto;
