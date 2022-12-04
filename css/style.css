@@ -26,13 +26,13 @@ a.skip-main:focus, a.skip-main:active {
     top: auto;
     width: 30%;
     height: auto;
-    overflow:auto;
+    overflow: auto;
     margin: 10px 35%;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
-    border:4px solid #393539;
-    text-align:center;
-    z-index:999;
+    border: 4px solid #393539;
+    text-align: center;
+    z-index: 999;
 }
 
 /* Navigation bar */
@@ -159,11 +159,11 @@ nav a.current {
     #greet div:first-of-type {
         animation: none;
     }
-    
+
     #greet div:last-of-type {
         animation: none;
     }
-    
+
     #greet div:last-of-type span {
         animation: none;
     }
@@ -362,6 +362,82 @@ footer {
     background-color: #5a5c67;
 }
 
+/* Contact Form */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5fr);
+    gap: 10px;
+}
+
+input, label {
+    display: block;
+}
+
+.formtitle {
+    width: 100%;
+    padding-top: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #393539;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    resize: vertical;
+}
+
+textarea {
+    height: 200px;
+}
+
+.firstname {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.lastname {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.sub {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+.con {
+    grid-row: 3;
+    grid-column: 1 / -1;
+}
+
+input[type=submit] {
+    grid-row: 4;
+    grid-column: 1 / -1;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    background-color: #5a5c67;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #9e6e83;
+}
+
 @media screen and (min-width:778px) {
     body {
         grid-template-rows: 45px auto auto 45px;
@@ -385,7 +461,7 @@ footer {
     .thin {
         max-width: 80%;
     }
-    
+
     .wide {
         max-width: 80%;
     }
@@ -415,7 +491,7 @@ footer {
     .thin {
         max-width: 300px;
     }
-    
+
     .wide {
         max-width: 600px;
     }

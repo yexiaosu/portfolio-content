@@ -14,6 +14,16 @@
     <title>Home</title>
   </head>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHBTDD2QHH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NHBTDD2QHH');
+  </script>
+
   <body>
     <header>
       <a class="skip-main" href="#main">Skip to main content</a>
@@ -44,6 +54,27 @@
           I have many hobbies, including drawing, playing video games, making assembled models, etc. I am quite interested in drawing, though I have no professional training. For me, this hobby is my way of decompression and a manifestation of my love for life. If you are interested in my works, you can go to Gallery to see some of them.
         </p>
       </div>
+      <h1 class="formtitle">Contact Form</h1>
+      <form  action="https://formspree.io/f/xayklaqn" method="POST">
+        <div class="firstname">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+        </div>
+        <div class="lastname">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+        </div>
+        <div class="sub">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject of contact" required>
+        </div>
+        <div class="con">
+          <label for="content">Content</label>
+          <textarea id="content" name="content" placeholder="Write what you want to say to me!" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
     </main>
     <aside class="card">
       <div>
@@ -62,6 +93,8 @@
         <button onclick="window.open('https://drive.google.com/file/d/19LAhycFy8dc7FXljWr1fb1zAPQAuVpjU/view?usp=sharing','_blank')">Resume</button>
       </div>
     </aside>
-    <footer>&copy; 2022</footer>
+    <footer>
+      <div>&copy; 2022</div>
+    </footer>
   </body>
 </html>
